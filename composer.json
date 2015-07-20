@@ -1,0 +1,45 @@
+{
+    "name": "ice/mercuryclient-bundle",
+    "type": "symfony-bundle",
+    "description": "Client for the ICE Mercury API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Hogan",
+            "email": "rob.hogan@admin.cam.ac.uk"
+        },
+        {
+            "name": "Stuart Chapman",
+            "email": "stuart.chapman@admin.cam.ac.uk"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rh389/serializer.git"
+        }
+    ],
+    "require": {
+        "misd/guzzle-bundle": "@stable",
+        "ice/veritasclient-bundle": ">=0.2.2",
+        "ice/minervaclient-bundle": "~2.0",
+        "ice/janusclient-bundle": ">=0.2",
+        "jms/serializer-bundle": ">=0.12.0@dev",
+        "cambridgeuniversity/ice-paymentplan": "~1.1"
+    },
+    "require-dev": {
+        "liip/functional-test-bundle": "dev-master",
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "suggest": {
+        "ice/patchpatch": "Helps processing Patch REST requests."
+    }
+}
